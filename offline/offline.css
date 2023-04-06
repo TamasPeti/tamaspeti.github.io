@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:ital,wght@1,200&display=swap');
+
+img, video{
+    pointer-events: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    /* Use flexbox to center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Use viewport units to make the container responsive */
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .artcentered {
+    /* Use max-width and max-height to make the image responsive */
+    max-width: 60%;
+    max-height: 60%;
+  }
+  
+  .offline1 {
+    /* Use text-align to center the paragraph */
+    text-align: center;
+    font-family: Bebas Neue;
+    /*the paragraph font size will be 10% of the viewport width, but never smaller than 20 pixels or larger than 40 pixels.*/
+    font-size: clamp(100%, 10vw, 300%);
+    margin: 0;
+  }
+  .offline1{
+    text-align: center;
+  }
+  
+  .awsnap{
+    font-family: Bungee Shade;
+    font-size: clamp(100%, 10vw, 200%);
+    margin: 0;
+  }
+
+  .offline2{
+    text-align: center;
+    font-family: Poppins;
+    font-size: clamp(20%, 2vw, 100%);
+  }
